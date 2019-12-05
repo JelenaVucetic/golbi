@@ -1,0 +1,100 @@
+body {
+    font-family: Merriweather;
+}
+
+.mySlider {
+    padding: 0 !important;
+}
+
+.carousel-caption {
+    padding-bottom: 300px !important;
+}
+.carousel-caption  h1{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.carousel-caption  p{
+    font-size: 36px;
+    font-weight: lighter;
+}
+
+.headerBottom{
+    margin-top: -100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+.golbiPrint {
+    float: left;
+
+}
+
+.golbiPrint p {
+    position: relative;
+    z-index: 99;
+    color: white;
+    font-weight: lighter;
+    font-size: 22px;
+}
+
+.arrows {
+    display: flex;
+    float: right;
+}
+.box {
+    width: 61px;
+    height: 51px;
+    margin: 10px;
+    background-color: #EC1C24;
+    z-index: 99;    
+}
+
+.box a {
+    position: relative;
+}
+
+
+/* About Section */
+
+.aboutSection {
+    background: #EC1C24;
+    color: white;
+}
+
+.content {
+    padding: 100px 0;
+    width: 60%;
+    margin: auto;
+}
+
+.content h1 {
+  font-size: 40px;
+}
+
+.content p {
+    font-size: 22px;
+}
+
+.readMore {
+    display: flex;
+}
+
+.readMore img {
+    width:35px ;
+    height: 35px;
+  
+}
+
+.readMore p {
+    font-size: 25px;
+    padding-left: 20px;
+}
+
+
+/* Service Section */
+
+.serviceSection {
+    background: #F3F3F3;
+}
