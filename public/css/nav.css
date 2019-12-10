@@ -5,10 +5,10 @@
     left: 0;
     right: 0;
     z-index: 1;
-    background: rgba(46, 55, 70, 0.308) 0% 0% no-repeat padding-box;
+    background: rgba(46, 55, 70, 0.308);
     filter: blur(5px);
     width: 100%;
-    height: 121px;
+    height: 100px;
 }
 
 .myContainer {
@@ -39,4 +39,10 @@
 
 .myCollapse {
     padding-top: 20px;
+}
+
+@media(max-width: 680px) {
+    .blur {
+        height: 70px;
+    }
 }

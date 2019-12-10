@@ -27,3 +27,6 @@ Route::get('/usluge', function () {
 Route::get('/kontakt', function () {
     return view('contact');
 });
+
+Route::post('/send-email', 'SendEmailController@send');
+Route::post('/order-email', 'OrderEmailController@send');

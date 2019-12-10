@@ -1,5 +1,19 @@
 body {
     font-family: Merriweather;
+    
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+.carousel-control.left {
+     background-image: none !important;
+}
+
+.carousel-control.right {
+    background-image: none !important;
 }
 
 .mySlider {
@@ -7,8 +21,24 @@ body {
 }
 
 .carousel-caption {
-    padding-bottom: 300px !important;
+    padding-bottom: 400px !important;
 }
+
+.language {
+    padding-bottom: 319px;
+    font-size: 24px;
+}
+
+.language a {
+    text-decoration: none;
+    color: white;
+}
+
+.language a:hover {
+    text-decoration: none;
+    color: #8E8E8E;
+}
+
 .carousel-caption  h1{
     font-size: 72px;
     font-weight: bold;
@@ -71,6 +101,7 @@ body {
 
 .content h1 {
   font-size: 40px;
+  margin-bottom: 50px;
 }
 
 .content p {
@@ -97,4 +128,274 @@ body {
 
 .serviceSection {
     background: #F3F3F3;
+}
+
+.serviceContent {
+    padding: 100px 0;
+    width: 60%;
+    margin: auto;
+}
+
+.serviceContent h1 {
+    color:#313A49;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.serviceBoxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.serviceBoxes a {
+    text-decoration: none !important;
+}
+
+.singleBox {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.singleBox img {
+    width: 348px;
+    height: 275px;
+}
+
+.singleBox p {
+    padding: 30px;
+    background: #EC1C24;
+    color: white;
+    font-size: 19px;
+}
+
+
+/* Sending section */
+
+.sendingSection {
+    background-color: #EC1C24;
+}
+
+.sendingContent {
+    padding: 100px 0;
+    width: 60%;
+    margin: auto;
+}
+
+.sendingContent h1 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.icons div {
+    width: 244px;
+    height: 244px;
+    background-color: #E22C33;
+    border: 1px solid white;
+    margin-bottom: 100px;
+    
+}
+
+.icons img {
+    width: 132px;
+    height: 132px;
+    margin: 55px;
+}
+
+.icons p {
+    text-align: center;
+    color: white;
+    font-size: 19px;
+    padding: 20px;
+}
+
+.seeMore {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.seeMore p {
+    color: white;
+    font-size: 24px;
+}
+
+/* Contact Section */
+
+.contactSection {
+    background-color: #EEEEEE;
+}
+
+.contactContent {
+    padding: 100px 0;
+    width: 60%;
+    margin: auto;
+}
+
+.contactContent h1 {
+    font-size: 40px;
+    color: #313A49;
+    margin-bottom: 30px;
+}
+
+.myForm {
+    display: flex;
+    flex-direction: column;
+}
+
+.personalInfo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.personalInfo input {
+    width: 536px;
+    height: 58px;
+    border: 1px solid #BEBEBE;
+}
+
+
+.myForm input::placeholder {
+    padding: 20px;
+    font-size: 22px;
+    color: #919191;
+}
+.myForm input:focus::placeholder{
+    color:transparent;
+}
+
+.input {
+    height: 58px;
+    margin-bottom: 30px;
+    border: 1px solid #BEBEBE;
+}
+
+.input:focus::placeholder{
+    color:transparent;
+}
+
+.myForm textarea {
+    height: 220px;
+    margin-bottom: 30px;
+    border: 1px solid #BEBEBE;
+}
+
+.myForm textarea:focus::placeholder{
+    color:transparent;
+}
+
+.myForm textarea::placeholder {
+    padding: 20px;
+    font-size: 22px;
+    color: #919191;
+}
+
+#btn {
+    width: 260px;
+    height: 58px;
+    color: white;
+    background-color: #EC1C24;
+    font-size: 22px;
+    border: none;
+}
+
+@media(max-width: 680px) {
+    
+    .serviceBoxes {
+        flex-direction: column;
+    }
+    .singleBox img {
+        width: 100%;
+    }
+
+    #headerImg {
+        height: 65vh;
+    }
+
+    .carousel-caption {
+        padding-bottom: 90px !important;
+    }
+
+    .language {
+        padding-bottom: 0;
+        font-size: 18px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 30px;
+    }
+
+    .carousel-caption p {
+        font-size: 23px;
+    }
+
+    .headerBottom {
+        margin-top: -60px;
+        padding: 0 13px;
+    }
+
+    .golbiPrint p {
+        padding-top: 20px;
+        font-size: 11px;
+    }
+
+    .box {
+        width: 30px;
+        height: 30px;
+        margin: 10px 5px;
+    }
+
+    .content {
+        padding: 40px 0;
+        width: 80%;
+    }
+
+    .content p {
+        font-size: 18px;
+    }
+
+    .readMore p {
+        font-size: 22px;
+    }
+
+    .serviceContent {
+        padding: 40px 0;
+        width: 80%;
+    }
+
+   .sendingContent {
+        width: 90%;
+    }
+
+    .icons div {
+        width: 152px;
+        height: 150px;
+    }
+    .icons img {
+        width: 127px;
+        height: 132px;
+        margin: 9px;
+    }
+
+    .contactContent {
+        width: 90%;
+    }
+
+    #btn {
+        width: 100%;
+
+    }
+
+    .personalInfo input:nth-child(1) {
+        margin-bottom: 30px;
+    }
 }
