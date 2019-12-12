@@ -50,6 +50,13 @@
 }
 
 
+@media(min-width: 1600px) {
+    .footerContent {
+        width: 50%;
+    }
+ }
+
+
 @media(max-width: 680px) {
     .footerSection img {
         width: 300px;

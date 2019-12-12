@@ -13,6 +13,8 @@ class OrderMail extends Mailable
 
     public $order;
 
+    
+
     /**
      * Create a new message instance.
      *
@@ -21,6 +23,7 @@ class OrderMail extends Mailable
     public function __construct($order)
     {
         $this->order = $order;
+
     }
 
     /**
@@ -30,6 +33,11 @@ class OrderMail extends Mailable
      */
     public function build()
     {
-        return $this->from('it@qqriq.me')->subject('Order Mail')->view('mails.order_email_template')->with('order', $this->order);
+        return $this->from('it@qqriq.me')->subject('Order Mail')->view('mails.order_email_template')->with('order', $this->order)
+        ->attach($this->order['document']->getRealPath(),
+                [
+                    'as' => $this->order['document']->getClientOriginalName(),
+                    'mime' => $this->order['document']->getClientMimeType(),
+                ]);
     }
 }

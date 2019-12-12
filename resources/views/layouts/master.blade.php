@@ -8,10 +8,14 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
 
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/welcome.css">
         <link rel="stylesheet" href="/css/about.css">
+        <link rel="stylesheet" href="/css/services.css">
+        <link rel="stylesheet" href="/css/contact.css">
         <link rel="stylesheet" href="/css/nav.css">
         <link rel="stylesheet" href="/css/footer.css">
 
@@ -19,10 +23,11 @@
         {{-- jquery --}}
         <script src="/js/jQuery.js"></script>
 
-        {{-- boostrap --}}
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
 
     </head>
     <body>
@@ -33,16 +38,16 @@
        
                 @yield('content')
                 
-        
+        @include('layouts.contact')
         @include('layouts.footer')
         @include('sweetalert::alert')
     </div>
     </body>
 
     <script>
-  $('.carousel').carousel({
-    interval: false
-}); 
+        $('.carousel').carousel({
+            interval: false
+        }); 
     </script>
 
     <script>  
@@ -63,7 +68,17 @@
           // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
           // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
           var modal = $(this)
-          modal.find('.title input').val(recipient)
+          modal.find('.dinamicInput input').val(recipient)
         })
             </script>
+
+<script>
+   $('#contactLink').click(function(event){
+       event.preventDefault();
+            positionabout = $('#contact').offset().top - $('#myNav').height();
+            $('html, body').animate({scrollTop:positionabout}, 'slow' , 'linear');
+
+        })
+</script>
+
 </html>

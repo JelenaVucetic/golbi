@@ -8,9 +8,12 @@
     height: auto;
     background: none;
     cursor: auto;
+    margin: auto;
+    width: 100%;
+    padding-bottom: 30px;
 }
 
-.title input:focus {
+.dinamicInput input:focus {
     border: none;
     outline: none !important;
     border-color: inherit;
@@ -18,9 +21,20 @@
     box-shadow: none;
 }
 
+.modal-content {
+     pointer-events: none !important; 
+}
+
+
+#modalButton {
+    padding: 19px;
+    padding-left: 90%;
+    font-size: 50px;
+}
 
 .myModalDialog1 {
     width: 90% !important;
+    max-width: 90% !important;
 }
 
 .myModalBody1 h1 {
@@ -39,7 +53,7 @@
 }
 
 .title {
-    padding: 60px 0;
+    padding-top: 60px;
 }
 
 .myForm1 {

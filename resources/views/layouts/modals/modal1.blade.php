@@ -4,12 +4,12 @@
     
         <!-- Modal content-->
         <div class="modal-content">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <button type="button" class="close" data-dismiss="modal" id="modalButton">&times;</button>
          
         <div class="modal-body myModalBody1">
             <div class="title">
                 <h1>UPIT ZA ŠTAMPU</h1>
-                <input type="text" class="form-control" id="recipient-name" name="type" disabled>
+                
             </div>
 
             <div class="container" >
@@ -35,6 +35,10 @@
 
             <form method="post" action="/order-email#order" enctype="multipart/form-data" class="myForm1" >
                 @csrf
+                <div class="dinamicInput">
+                    <input type="text" class="form-control" id="recipient-name" name="title" >
+                </div>
+               
                 <textarea type="text" placeholder="Spcifikacija" name="specification" required></textarea>
                 <label for="">* U ovom polju unesite informacije o željenom materijalu za štampu, debljini papira, da li želite štampu u boji ili crno-bijelu, da li želite doradu u vidu mat ili glossy plastifikacije i slično.</label>
                 <input type="text" placeholder="Količina" name="number">
@@ -44,7 +48,7 @@
                 <div class="uploadImage">
                     <img src="/images/uploadicon.svg" alt="">
                     <label class="custom-file-upload">
-                            <input id="file-upload" type="file"/>
+                            <input id="file-upload" type="file" name="document"/>
                         Upload
                     </label>
                 </div>

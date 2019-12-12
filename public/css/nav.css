@@ -1,48 +1,16 @@
-.blur {
-    margin: 0 !important;
-    padding: 0 !important;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-    background: rgba(46, 55, 70, 0.308);
-    filter: blur(5px);
-    width: 100%;
-    height: 100px;
+.navbar-brand img {
+    width: 166px;
 }
 
-.myContainer {
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    display: flex;
-    justify-content: space-between;
+#myNav {
+    background: rgba(0, 0, 0, 0.185);
 }
 
-.logo {
-    width: 166.05px;
-    height: 53.09px;
-}
-
-.myLinks a {
+#navLinks a {
+    text-decoration: none;
     color: white;
-    font-family: Merriweather;
-    font-size: 24px;
-    font-weight: 100;
 }
 
-.myLinks a:hover {
-   background-color: transparent !important;
-   color: #BEBEBE;
-}
-
-.myCollapse {
-    padding-top: 20px;
-}
-
-@media(max-width: 680px) {
-    .blur {
-        height: 70px;
-    }
+#myDropdown a {
+    color: black;
 }

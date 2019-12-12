@@ -1,5 +1,6 @@
 @extends('layouts.master')
 
+
 @section('content')
 
 <header>
@@ -9,18 +10,14 @@
                 <div id="my-slider" class="carousel slide" data-ride="carousel" >
                     {{-- wrapper for sliders --}}
                     <div class="carousel-inner" role="listbox">
-                        <div class="item active">
-                            <img src="/images/Golbi-print-slider.jpg" alt="golbi.jpg" id="headerImg">
+                        <div class="carousel-item active">
+                            <img src="/images/Golbi-print-slider.jpg" alt="golbi.jpg" id="headerImg" >
                             <div class="carousel-caption">
-                                <div class="language">
-                                    <a href="#">Mne</a>
-                                    <a href="#">Eng</a>
-                                </div>
                                 <h1>Uvjerite se u naš kvalitet!</h1>
                                 <p>i dugogodišnje iskustvo</p>
                             </div>
                         </div>
-                        <div class="item">
+                        <div class="carousel-item">
                             <img src="/images/Golbi-print-slider.jpg" alt="golbi.jpg" id="headerImg">
                             <div class="carousel-caption">
                                 <h1>this is caption 2</h1>
@@ -166,40 +163,5 @@
      </div>
  </div>
 
- <div class="container-fluid contactSection" id="contact">
-     <div class="contactContent">
-         <h1>Kontakt e-mail</h1>
-
-         <div class="container" >
-                @if(count($errors) > 0)
-                    <div class="alert alert-danger">
-                        <button type="button" class="close" data-dismiss='alert'>x</button>
-                        <ul>
-                            @foreach ($errors->all() as $error)
-                                <li>{{ $error }}</li>
-                            @endforeach
-                        </ul>
-                    </div>
-                @endif
-        
-         
-                @if(session('succes_message')))
-                <div class="alert alert-success alert-block">
-                    {{ session('succes_message') }}
-                </div> 
-                @endif 
-            </div>
-
-         <form method="post" action="/send-email#contact" class="myForm" enctype="multipart/form-data">
-             @csrf
-             <div class="personalInfo">
-                <input type="text" placeholder="Vaše ime" name="name" required>
-                <input type="text" placeholder="Vaš e-mail" name="email" required>
-             </div>
-             <input class="input" type="text" placeholder="Naslov" name="title" required>
-             <textarea placeholder="Vaša poruka" name="message" required></textarea>
-             <button type="submit" id="btn">Pošaljite e-mail</button>
-         </form>
-     </div>
- </div>
+ 
 @endsection

@@ -22,5 +22,13 @@
         </div>
  </div>
 
+ <div class="container-fluid quote ">
+      <div class="qupteContent">
+          <h1>"Sve što možeš da zamisliš, možeš i da ostvariš."</h1>
+          <p>Pablo Pikaso</p>
+      </div>
+    
+ </div>
+
 
 @endsection

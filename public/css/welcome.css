@@ -16,23 +16,29 @@ body::-webkit-scrollbar {
     background-image: none !important;
 }
 
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+
+    width: 100% !important;
+}
+
+#headerImg {
+    width: 100%;
+    height: 100vh;
+}
+
+#headerImg1 {
+    width: 100%;
+    height: 100vh;
+}
+
 .mySlider {
     padding: 0 !important;
 }
 
 .carousel-caption {
-    padding-bottom: 400px !important;
+    padding-bottom: 500px !important;
 }
 
-.language {
-    padding-bottom: 319px;
-    font-size: 24px;
-}
-
-.language a {
-    text-decoration: none;
-    color: white;
-}
 
 .language a:hover {
     text-decoration: none;
@@ -58,7 +64,7 @@ body::-webkit-scrollbar {
 
 .golbiPrint {
     float: left;
-
+    padding-top: 30px;
 }
 
 .golbiPrint p {
@@ -227,86 +233,31 @@ body::-webkit-scrollbar {
     font-size: 24px;
 }
 
-/* Contact Section */
-
-.contactSection {
-    background-color: #EEEEEE;
-}
-
-.contactContent {
-    padding: 100px 0;
-    width: 60%;
-    margin: auto;
-}
-
-.contactContent h1 {
-    font-size: 40px;
-    color: #313A49;
-    margin-bottom: 30px;
-}
-
-.myForm {
-    display: flex;
-    flex-direction: column;
-}
-
-.personalInfo {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-bottom: 30px;
-}
-
-.personalInfo input {
-    width: 536px;
-    height: 58px;
-    border: 1px solid #BEBEBE;
-}
 
 
-.myForm input::placeholder {
-    padding: 20px;
-    font-size: 22px;
-    color: #919191;
-}
-.myForm input:focus::placeholder{
-    color:transparent;
-}
 
-.input {
-    height: 58px;
-    margin-bottom: 30px;
-    border: 1px solid #BEBEBE;
-}
+@media(min-width: 2000px) {
+    .sendingContent {
+        width: 50%;
+    }
 
-.input:focus::placeholder{
-    color:transparent;
-}
+    .serviceContent {
+        width: 50%;
+    }
 
-.myForm textarea {
-    height: 220px;
-    margin-bottom: 30px;
-    border: 1px solid #BEBEBE;
-}
+    .content {
+        width: 50%;
+    }
 
-.myForm textarea:focus::placeholder{
-    color:transparent;
-}
+    .contactContent {
+        width: 50%;
+    }
+    .footerContent {
+        width: 50%;
+    }
+ }
 
-.myForm textarea::placeholder {
-    padding: 20px;
-    font-size: 22px;
-    color: #919191;
-}
 
-#btn {
-    width: 260px;
-    height: 58px;
-    color: white;
-    background-color: #EC1C24;
-    font-size: 22px;
-    border: none;
-}
 
 @media(max-width: 680px) {
     
@@ -319,6 +270,7 @@ body::-webkit-scrollbar {
 
     #headerImg {
         height: 65vh;
+
     }
 
     .carousel-caption {
@@ -341,6 +293,10 @@ body::-webkit-scrollbar {
     .headerBottom {
         margin-top: -60px;
         padding: 0 13px;
+    }
+
+    .golbiPrint {
+        padding-top: 0;
     }
 
     .golbiPrint p {
@@ -386,16 +342,4 @@ body::-webkit-scrollbar {
         margin: 9px;
     }
 
-    .contactContent {
-        width: 90%;
-    }
-
-    #btn {
-        width: 100%;
-
-    }
-
-    .personalInfo input:nth-child(1) {
-        margin-bottom: 30px;
-    }
 }

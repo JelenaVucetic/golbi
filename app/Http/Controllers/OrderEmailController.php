@@ -15,11 +15,21 @@ class OrderEmailController extends Controller
             'number' => 'required',
             ]);
         
+        
+         $document = $request->file('document');
+
+         if ($document->getError() == 1) {
+            $max_size = $document->getMaxFileSize() / 1024 / 1024;  // Get size in Mb
+            $error = 'The document size must be less than ' . $max_size . 'Mb.';
+            return redirect()->back()->with('flash_danger', $error);
+        }
+
         $order = array (
-            'type' => $request->type,
+            'title' => $request->title,
             'specification' => $request->specification,
             'number' => $request->number,
-            'info' => $request->info
+            'info' => $request->info,
+            'document' => $document
         );
         Alert::success('Vaša poruka je poslata', 'Hvala vam što ste nas kontaktirali!')->showConfirmButton('OK', '#EC1C24')->autoClose(5000)->width('35%')->padding('100px');
         Mail::to('it@qqriq.me')->send(new OrderMail($order));

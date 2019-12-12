@@ -15,7 +15,7 @@
 .aboutContent {
     text-align: center;
     color: white;
-    padding: 200px 0;
+    padding: 300px 0;
 }
 
 .aboutContent h1 {
@@ -44,6 +44,45 @@
     margin-bottom: 50px;
 }
 
+.quote {
+    background-color:#EC1C24 ;
+}
+
+.qupteContent {
+    width: 60%;
+    margin: auto;
+    padding: 200px 0;
+}
+
+.qupteContent h1 {
+   text-align: center;
+   color: white;
+   font-weight: bold;
+   font-size: 60px;
+}
+
+.qupteContent p {
+    text-align: right;
+    color: white;
+    font-size: 30px;
+ }
+
+
+ @media(min-width: 2000px) {
+    .aboutContent {
+        padding: 350px 0;
+    }
+
+    .qupteContent h1 {
+        font-size: 50px;
+     }
+     
+
+    .qupteContent {
+        width: 50%;
+    }
+ }
+
 @media(max-width: 680px) {
     .aboutContent {
         padding: 150px 0;
@@ -59,4 +98,17 @@
     .moreAbout p {
         font-size: 18px;
     }
+
+    .qupteContent {
+        width: 90%;
+        padding: 80px 0;
+    }
+    
+    .qupteContent h1 {
+        font-size: 30px;
+    }
+
+    .qupteContent p {
+        font-size: 25px;
+     }
 }
