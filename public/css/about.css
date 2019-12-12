@@ -1,15 +1,16 @@
 .about {
     background-image: url('/images/557.jpg');
-    height: 70vh;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    margin-bottom: -17px;
 }
 
 .about p {
     font-size: 22px;
     color: #FFFFFF;
-    margin: 50px;
+    padding: 50px;
 }
 
 .aboutContent {

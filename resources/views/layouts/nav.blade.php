@@ -1,15 +1,17 @@
 
 
           <nav class="navbar navbar-expand-lg fixed-top " id="myNav">
-            <div>
-              <a class="navbar-brand" href="/"><img src="/images/Logo Golbi Bijeli.svg" alt=""></a>
+            <div class="myStyle">
+              <div  style="display:flex; width:100%; justify-content:space-between">
+                <div>
+                  <a class="navbar-brand" href="/"><img src="/images/Logo Golbi Bijeli.svg" alt=""></a>
 
-            </div>
+                </div>
               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <i class="fas fa-bars" style="color:white;"></i>
               </button>
-            
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          </div>
+              <div class="collapse navbar-collapse myStyle1" id="navbarSupportedContent" >
                 <ul class="navbar-nav mr-auto" id="navLinks">
                   <li class="nav-item active">
                     <a class="nav-link" href=".">Početna</a>
@@ -17,7 +19,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/o-nama">O nama</a>
                   </li>
-                  <li class="nav-item dropdown" style="display: flex; align-items: baseline;">
+                  <li class="nav-item dropdown" style="display: flex; align-items: center;">
                       <a  href="/usluge">
                       Usluge
                       </a>
@@ -31,8 +33,11 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                      <a class="nav-link" href="" id="contactLink" >Kontakt</a>
+                      <a class="nav-link" href="/#contact" id="contactLink" >Kontakt</a>
                     </li>
                 </ul>
               </div>
+            </div>
+  
+          
             </nav>

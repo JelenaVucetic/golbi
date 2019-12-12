@@ -1,15 +1,14 @@
  <!-- Modal -->
- <div class="modal fade" id="myModal" role="dialog">
+ <div class="modal fade" id="myModal" role="dialog" >
     <div class="modal-dialog myModalDialog1">
     
         <!-- Modal content-->
-        <div class="modal-content">
+        <div class="modal-content" >
             <button type="button" class="close" data-dismiss="modal" id="modalButton">&times;</button>
          
         <div class="modal-body myModalBody1">
             <div class="title">
                 <h1>UPIT ZA ŠTAMPU</h1>
-                
             </div>
 
             <div class="container" >
@@ -36,7 +35,7 @@
             <form method="post" action="/order-email#order" enctype="multipart/form-data" class="myForm1" >
                 @csrf
                 <div class="dinamicInput">
-                    <input type="text" class="form-control" id="recipient-name" name="title" >
+                    <input type="text" class="form-control" id="recipient-name" name="title" style=" pointer-events: none;">
                 </div>
                
                 <textarea type="text" placeholder="Spcifikacija" name="specification" required></textarea>

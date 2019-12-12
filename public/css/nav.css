@@ -14,3 +14,47 @@
 #myDropdown a {
     color: black;
 }
+.dropdown-menu {
+    background: rgba(0, 0, 0, 0.185) !important;
+}
+
+.dropdown-menu a {
+    color: white !important;
+}
+
+ .myStyle {
+    display:flex; 
+    width: 60%;  
+    margin: auto;
+    padding: 30px 0;
+}
+
+.myStyle1 {
+    width: 70% ;
+}
+
+#navLinks li a {
+    font-size: 24px;
+    white-space: nowrap;
+}
+#navLinks li{
+    padding-right: 30px;
+}
+
+
+#navLinks li a:hover {
+    color: #BEBEBE;
+}
+
+@media(max-width: 1100px) {
+    .myStyle {
+        display: block; 
+        width: 100%;  
+        padding: 0;
+     
+    }
+    
+    .myStyle1 {
+        padding-left: 0;
+    }
+}

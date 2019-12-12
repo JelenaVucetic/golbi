@@ -5,6 +5,9 @@
     <div class="servicesContent">
             <h1>DIZAJN, DIGITALA I OFFSET</h1>
     </div>
+    <div>
+        <p>U pogonu od 1993.-Golbi Print</p>
+    </div>
 </div>
 
 <div class="container-fluid diseignSection">

@@ -6,7 +6,9 @@
              <h1>GOLBI PRINT</h1>
              <h2>Kompletna kuća štampe</h2>
         </div>
-  
+        <div>
+             <p>U pogonu od 1993.-Golbi Print</p>
+        </div>
  </div>
  <div class="container-fluid aboutSection">
         <div class="content">

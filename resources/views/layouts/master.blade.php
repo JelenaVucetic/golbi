@@ -23,22 +23,28 @@
         {{-- jquery --}}
         <script src="/js/jQuery.js"></script>
 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        
+
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+
+        
+
+
 
 
     </head>
     <body>
-          
+
         @include('layouts.modals.modal1')
         <div class="supreme-container">
-        @include('layouts.nav') 
-       
+        @include('layouts.nav')
+
                 @yield('content')
-                
-        @include('layouts.contact')
+
+
         @include('layouts.footer')
         @include('sweetalert::alert')
     </div>
@@ -47,10 +53,10 @@
     <script>
         $('.carousel').carousel({
             interval: false
-        }); 
+        });
     </script>
 
-    <script>  
+    <script>
     document.getElementById("seeMore").addEventListener("click", function(){
         var x = document.getElementById("text");
             if (x.innerHTML === "Pogledaj još") {
@@ -73,12 +79,12 @@
             </script>
 
 <script>
-   $('#contactLink').click(function(event){
-       event.preventDefault();
-            positionabout = $('#contact').offset().top - $('#myNav').height();
-            $('html, body').animate({scrollTop:positionabout}, 'slow' , 'linear');
+//    $('#contactLink').click(function(event){
+//        event.preventDefault();
+//             positionabout = $('#contact').offset().top - $('#myNav').height();
+//             $('html, body').animate({scrollTop:positionabout}, 'slow' , 'linear');
 
-        })
+//         })
 </script>
 
 </html>

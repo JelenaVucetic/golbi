@@ -1,6 +1,6 @@
 .services {
     background-image: url('/images/557.jpg');
-    height: 70vh;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -17,6 +17,12 @@
     font-size: 72px;
     font-weight: bold;
     text-shadow: 0px 5px 6px #0000004F;
+}
+
+.services p {
+    font-size: 22px;
+    color: #FFFFFF;
+    padding: 50px;
 }
 
 

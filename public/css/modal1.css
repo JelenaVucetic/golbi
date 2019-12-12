@@ -21,10 +21,6 @@
     box-shadow: none;
 }
 
-.modal-content {
-     pointer-events: none !important; 
-}
-
 
 #modalButton {
     padding: 19px;
