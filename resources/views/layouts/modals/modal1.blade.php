@@ -38,7 +38,7 @@
                     <input type="text" class="form-control" id="recipient-name" name="title" style=" pointer-events: none;">
                 </div>
                
-                <textarea type="text" placeholder="Spcifikacija" name="specification" required></textarea>
+                <textarea type="text" placeholder="Specifikacija" name="specification" required></textarea>
                 <label for="">* U ovom polju unesite informacije o željenom materijalu za štampu, debljini papira, da li želite štampu u boji ili crno-bijelu, da li želite doradu u vidu mat ili glossy plastifikacije i slično.</label>
                 <input type="text" placeholder="Količina" name="number">
                 <label for="">* Unesite željenu količinu.</label>

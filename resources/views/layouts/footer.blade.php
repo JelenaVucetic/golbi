@@ -6,12 +6,12 @@
         <div>
             <a href="/">Golbi Print </a>
             <a href="/usluge">Usluge </a>
-            <a href="">Kontakt </a>
+            <a href="/#contact">Kontakt </a>
         </div>
         <div>
-            <a href="">Dizajn</a>
-            <a href="">Digitalna štampa</a>
-            <a href="">Offset štampa</a>
+            <a href="/usluge#design">Dizajn</a>
+            <a href="/usluge#digital">Digitalna štampa</a>
+            <a href="/usluge#offset">Offset štampa</a>
         </div>
         <div>
            <p>office@golbi.me </p>

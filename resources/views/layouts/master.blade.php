@@ -56,16 +56,30 @@
         });
     </script>
 
+
+
     <script>
     document.getElementById("seeMore").addEventListener("click", function(){
+
+        if( $("#toggleImage").attr("src") == "images/gore.svg" ) {
+            $('#toggleImage').attr("src", "images/dolje.svg" );
+            } else {
+            $('#toggleImage').attr("src","images/gore.svg" );
+            }
+
         var x = document.getElementById("text");
+    
             if (x.innerHTML === "Pogledaj još") {
                 x.innerHTML = "Vidi manje";
-            } else {
+            }
+            else {
                 x.innerHTML = "Pogledaj još";
             }
         });
     </script>
+
+
+
 
 <script>
         $('#myModal').on('show.bs.modal', function (event) {
@@ -85,6 +99,18 @@
 //             $('html, body').animate({scrollTop:positionabout}, 'slow' , 'linear');
 
 //         })
+</script>
+
+<script>
+   $('#myModal').on('show.bs.modal', function(e) {
+        window.location.hash = "modal";
+    });
+
+    $(window).on('hashchange', function (event) {
+        if(window.location.hash != "#modal") {
+            $('#myModal').modal('hide');
+        }
+    });
 </script>
 
 </html>

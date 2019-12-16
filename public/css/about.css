@@ -1,22 +1,22 @@
 .about {
-    background-image: url('/images/557.jpg');
+    background-image: url('/images/02-O-nama---slider-FAVORIT.jpg');
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
     margin-bottom: -17px;
 }
 
 .about p {
     font-size: 22px;
-    color: #FFFFFF;
+    color: #EC1C24;
     padding: 50px;
 }
 
 .aboutContent {
     text-align: center;
-    color: white;
-    padding: 300px 0;
+    color: #EC1C24;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .aboutContent h1 {
@@ -91,6 +91,11 @@
     .aboutContent h1 {
         font-size: 50px;
     }
+    .about p {
+        font-size: 16px;
+        padding: 12px;
+    }
+    
 
     .aboutContent h2 {
         font-size: 26px;

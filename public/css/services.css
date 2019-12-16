@@ -1,5 +1,5 @@
 .services {
-    background-image: url('/images/557.jpg');
+    background-image: url('/images/03-Usluge-slider.jpg');
     height: auto;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10,7 +10,8 @@
 .servicesContent {
     text-align: center;
     color: white;
-    padding: 300px 0;
+    padding-top: 250px;
+    padding-bottom: 50px;
 }
 
 .servicesContent h1 {
@@ -28,6 +29,7 @@
 
 .diseignSection {
     background-color: #EEEEEE;
+    margin-top: -17px;
 }
 
 .designContent {
@@ -65,6 +67,11 @@
     }
     .servicesContent h1 {
         font-size: 40px;
+    }
+
+    .services p {
+        font-size: 16px;
+        padding: 12px;
     }
     .designContent {
         width: 90%;

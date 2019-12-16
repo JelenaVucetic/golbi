@@ -6,7 +6,7 @@
             <h1>DIZAJN, DIGITALA I OFFSET</h1>
     </div>
     <div>
-        <p>U pogonu od 1993.-Golbi Print</p>
+        <p>U pogonu od 1998.-Golbi Print</p>
     </div>
 </div>
 

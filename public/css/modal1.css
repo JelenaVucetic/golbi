@@ -24,7 +24,7 @@
 
 #modalButton {
     padding: 19px;
-    padding-left: 90%;
+    padding-left: 85%;
     font-size: 50px;
 }
 
@@ -64,6 +64,9 @@
     height: 224px;
     margin: auto;
     border: 1px solid #707070;
+    color:#919191;
+    padding:10px;
+    font-size: 22px;
 }
 
 .myForm1 input {
@@ -143,7 +146,12 @@ body.modal-open .supreme-container{
 
 @media(max-width: 680px) {
     .myModalBody1 h1 {
-        font-size: 51px;
+        font-size: 30px;
+        margin-bottom: 0px;
+    }
+
+    .title {
+        padding-top: 20px;
     }
 
     .myModalBody1 h4 {
@@ -156,5 +164,11 @@ body.modal-open .supreme-container{
 
     .myForm1 input {
         width: 100%;
+    }
+    #recipient-name {
+        font-size: 25px;
+    }
+    .modal-dialog {
+        margin: 1.1rem !important;
     }
 }
